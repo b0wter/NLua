@@ -3,6 +3,10 @@ function ValidateFoo(foo)
     if (foo.Name == nil or foo.Name == '') then
         table.insert(errors, "Name darf nicht leer sein!")
     end
+
+    if (foo.Id == nil) then
+        table.insert(errors, "Id darf nicht leer sein!")
+    end
     
     return errors;
 end
